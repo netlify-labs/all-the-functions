@@ -1,0 +1,15 @@
+{
+  "name": "11a-crud-create",
+  "version": "1.0.0",
+  "description": "",
+  "main": "11a-crud-create.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faunadb": "^2.6.1"
+  }
+}

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import functionsList from './data.json'
 import './App.css'
 
 export default class App extends Component {
   callFunc = () => {
-    fetch('/.netlify/functions/with-modules', {
+    fetch('/.netlify/functions/12-fetch-external-api', {
       method: 'GET'
     })
     .then((resp) => resp.json())
@@ -13,18 +14,28 @@ export default class App extends Component {
       console.log('e', e)
     })
   }
+  renderFunctions = () => {
+    return functionsList.map((fn) => {
+      return (
+        <div>
+          <a href={`/.netlify/functions/${fn}`}>{fn}</a>
+        </div>
+      )
+    })
+  }
   render() {
     return (
       <div>
-        <header className="App-header">
-          <a href="/.netlify/functions/with-redirect">
-            Function with redirect
-          </a>
-          <a href="/.netlify/functions/set-cookie">
-            Set cookie
-          </a>
-          <button onClick={this.callFunc}>click</button>
-        </header>
+        <div>
+          <h1>GET</h1>
+          {this.renderFunctions()}
+        </div>
+        <div>
+        <h1>POST</h1>
+          {this.renderFunctions()}
+        </div>
+        <button onClick={this.callFunc}>click</button>
+
       </div>
     )
   }

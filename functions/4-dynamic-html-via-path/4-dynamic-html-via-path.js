@@ -1,6 +1,8 @@
 
 exports.handler = async (event, context) => {
-  const userName = event.pathParameters && event.pathParameters.name
+  const path = event.path.replace(/\/\.netlify\/functions\/[^/]*\//, '')
+
+  const pathParts = (path) ? path.split('/') : []
 
   const html = (name = 'there') => {
     return `
@@ -20,6 +22,6 @@ exports.handler = async (event, context) => {
       'Cache-Control': 'no-cache',
       'Content-Type': 'text/html',
     },
-    'body': html(userName)
+    'body': html(pathParts[0])
   }
 }
