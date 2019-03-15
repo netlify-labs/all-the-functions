@@ -2,6 +2,20 @@
 
 All the different types of functions!
 
+## Table of Contents
+<!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:collapse=true&collapseText=Click to expand) -->
+<details>
+<summary>Click to expand</summary>
+
+- [Setup](#setup)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Functions list](#functions-list)
+- [Notes](#notes)
+
+</details>
+<!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
+
 ## Setup
 
 Install the dependencies
