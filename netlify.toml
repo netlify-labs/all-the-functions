@@ -1,0 +1,8 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+  functions = "functions"
+
+[[redirects]]
+  from = "/lol"
+  to = "https://google.com"
