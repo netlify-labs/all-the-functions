@@ -9,6 +9,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "docs": "node ./scripts/generateDocs.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "npm run build && netlify deploy -p",
@@ -25,6 +26,7 @@
   ],
   "devDependencies": {
     "globby": "^9.1.0",
+    "markdown-magic": "^0.1.25",
     "recursive-readdir": "^2.2.2"
   }
 }
