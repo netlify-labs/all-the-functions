@@ -13,3 +13,7 @@ When adding a new function, the server must be stopped and then restarted for it
 Browser doesn't open for me when running `netlify dev`
 
 ---
+
+Setting cookies via functions works on live sites but not locally
+
+---
